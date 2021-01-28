@@ -1,6 +1,5 @@
 # Frågor
 ###### *1. Var hittar man log-filerna för databaserna? (MySQL / MariaDB, och MongoDB)*  
-*(MySQL / MariaDB, och MongoDB)*
 
 I Linux/GNU är det vanligaste directoryn för log-filer: **/var/log/**.  
 Log-filer från MariaDB går att finna i **/var/log/mysql**.  
@@ -18,8 +17,7 @@ Log-filerna från MongoDB går att finna i **/var/log/mongodb**
 
 
 
-###### *5. Om du ger en annan part tillgång till din databas, vad är då viktigt att tänka på?*  
-*(Generell fråga, du behöver inte svara för båda databaserna)*  
+###### *5. Om du ger en annan part tillgång till din databas, vad är då viktigt att tänka på? (Generell fråga, du behöver inte svara för båda databaserna)*  
 
 
 
