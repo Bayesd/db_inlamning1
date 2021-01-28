@@ -5,13 +5,28 @@ I Linux/GNU är det vanligaste directoryn för log-filer:
 
     /var/log/  
 
-Log-filer från MariaDB går att finna i  
+Log-filer från MariaDB går att finna i:  
 
     /var/log/mysql
+    
+    /root/.mysql_history
+    
+Att ändra var logfiler sparas görs i:
+    
+    /etc/mysql/mariadb.conf.d/50-server.cnf
 
-Log-filerna från MongoDB går att finna i  
+Log-filerna från MongoDB går att finna i:  
 
     /var/log/mongodb 
+    /var/lib/mongodb/diagnostic.data
+
+Att ändra var logfiler sparas görs i:  
+
+    /etc/mongod.conf
+    
+Alla annan data sparar MongoDB (i default läget) i:  
+
+    /var/lib/mongodb
 
 ###### *2. Vad är skillnaden mellan en SQL databas som MySQL / MariaDB och en NoSQL databas som MongoDB?*
 
