@@ -91,11 +91,11 @@ Read påverkar inte databasen eftersom den enbart läser information.
 *(Visa både på MySQL och MongoDB)*
 
 Exempel:
-Ip-adress: 45.101.40.75
-Username: guest
-Password: abc123
-Portar: Default
-Database namn: test
+- Ip-adress: 45.101.40.75
+- Username: guest
+- Password: abc123
+- Portar: Default
+- Database namn: test
 
 
 MySQL/MariaDB:
@@ -106,8 +106,8 @@ MongoDB
 
     # mongo -h 45.101.40.75:27017 -u guest -p test
 
--h = host
+*-h = host
 -P = port
 -u = username
 -p = password prompt 
-
+*
