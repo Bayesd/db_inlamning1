@@ -70,10 +70,13 @@ MongoDB, Riak, Cassandra, ElasticSearch, HBase
 
 
 ###### *8. Om flera företag, organisationer eller personer använder samma databas, varför är det då viktigt att sätta upp separata användare i databasen för dessa parter?*  
+
 Genom att sätta upp flera användare kan vi tilldela rättigheter till de olika användarna. Detta är önsvärt eftersom vi inte vill att Företag X ska ha insyn i Företag Y's data.
 De olika användarna har enbart rättigheter att komma åt sitt respektive företags data och kan inte ens se att det finns annan data i databasen. 
 
 Det är även bra att skapa flera användare för de olika företagen med olika nivåer av rättigheter. En typ av användare kanske enbart ska ha läsrättigheter, en annan kanske ska ha möjlighet att föra in ny data, en tredje ska kunna uppdatera och korrigera och en fjärde ska ha möjlighet att radera. Även olika kombinationer av rättigheter kan vara nödvändigt.
+
+Om det med databas syftas på en specifik databas inuti MariaDB eller MongoDb, så är det viktigt att användarna enbart ges tillgång till de specifika tabeller/collections som rör deras företag, av samma anledning som i andra meningen av detta svar. 
 
 ###### *9.  Vilka delar i CRUD påverkar / gör ändringar i databasen, och vilka delar i CRUD gör inte det?*  
 
