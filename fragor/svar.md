@@ -18,16 +18,11 @@ Att ändra var logfiler sparas görs i:
 Log-filerna från MongoDB går att finna i:  
 
     /var/log/mongodb 
-    /var/lib/mongodb/diagnostic.data
 
 Att ändra var ska logfiler sparas görs i:  
 
     /etc/mongod.conf
     
-Alla annan data sparar MongoDB (i default läget) i:  
-
-    /var/lib/mongodb
-
 ###### *2. Vad är skillnaden mellan en SQL databas som MySQL / MariaDB och en NoSQL databas som MongoDB?*
 
 En skillnad är språket som används, MySQL/MariaDB använder SQL (Structured Query Language) och MongoDB använder sig av JavaScript. Det finns NoSQL databaser som stöder SQL men MongoDB är inte en av dem.
@@ -58,7 +53,7 @@ Det är viktigt att tänka på vilken information du vill att parten ska få til
 Till att börja med vill du skapa en ny användare som du tilldelar de rättigheter som du vill att parten ska ha.
 Behöver de endast kunna läsa information så ska du enbart tilldela läsrättigheter till användaren.
 Behöver de enbart tillgång till en databas eller kanske t.o.m. en tabell så bör du även specificera det och dubbelkolla att rättigheterna stämmer innan du delar med dig av uppgifterna till den andra parten.
-Det är även viktigt att ändra i konfigurationsfilen ifall den begränsar andra än lokala användare, så att den andra parten tillåts att ansluta från därifrån den behöver anslute.
+Det är även viktigt att ändra i konfigurationsfilen ifall den begränsar andra än lokala användare, så att den andra parten tillåts att ansluta från därifrån den behöver ansluta.
 
 ###### *6. Vad för typ av information kan vara känsligt / problematiskt att spara in en databas när det kommer till tex GDPR?*  
 
@@ -106,8 +101,4 @@ MongoDB
 
     # mongo -h 45.101.40.75:27017 -u guest -p test
 
-*-h = host
--P = port
--u = username
--p = password prompt 
-*
+*-h = host -P = port -u = username -p = password prompt*
